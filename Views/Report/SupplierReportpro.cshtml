@@ -1,0 +1,333 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Supplier Report</title>
+    <!-- Global stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="~/Scripts/css/global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Scripts/css/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Scripts/css/assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Scripts/css/assets/css/layout.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Scripts/css/assets/css/components.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Scripts/css/assets/css/colors.min.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+    <!-- Core JS files -->
+    <script src="~/Scripts/css/global_assets/js/main/jquery.min.js"></script>
+    <script src="~/Scripts/css/global_assets/js/main/bootstrap.bundle.min.js"></script>
+    <script src="~/Scripts/css/global_assets/js/plugins/loaders/blockui.min.js"></script>
+    <script src="~/Scripts/css/global_assets/js/plugins/ui/ripple.min.js"></script>
+    <!-- /core JS files -->
+    <!-- Theme JS files -->
+    <script src="~/Scripts/css/global_assets/js/plugins/visualization/d3/d3.min.js"></script>
+    <script src="~/Scripts/css/global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
+    <script src="~/Scripts/css/global_assets/js/plugins/forms/styling/switchery.min.js"></script>
+    <script src="~/Scripts/css/global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+    <script src="~/Scripts/css/global_assets/js/plugins/ui/moment/moment.min.js"></script>
+    <script src="~/Scripts/css/global_assets/js/plugins/pickers/daterangepicker.js"></script>
+    <script src="~/Scripts/css/global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+    <script src="~/Scripts/css/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+    <!--downloas file-->
+    <script src="~/Scripts/css/global_assets/js/plugins/tables/datatables/extensions/jszip/jszip.min.js"></script>
+    <script src="~/Scripts/css/global_assets/js/plugins/tables/datatables/extensions/pdfmake/pdfmake.min.js"></script>
+    <script src="~/Scripts/css/global_assets/js/plugins/tables/datatables/extensions/pdfmake/vfs_fonts.min.js"></script>
+    <script src="~/Scripts/css/global_assets/js/plugins/tables/datatables/extensions/buttons.min.js"></script>
+    <script src="~/Scripts/css/global_assets/js/demo_pages/datatables_extension_buttons_html5.js"></script>
+
+
+    <script src="~/Scripts/css/assets/js/app.js"></script>
+    <script src="~/Scripts/css/global_assets/js/demo_pages/dashboard.js"></script>
+    <script src="~/Script/angular.js"></script>
+    <script src="~/Script/angular-ui-router.min.js"></script>
+    <script src="~/Script/AngularControllers/Supplier_onboard.js"></script>
+    <!-- /theme JS files -->
+
+</head>
+<body ng-app="SuppApp" ng-controller="SuppController">
+
+    <!-- Main navbar -->
+    <div class="navbar navbar-expand-md navbar-dark bg-indigo navbar-static">
+        <div class="navbar-brand">
+            <a href="index.html" class="d-inline-block">
+                <img src="global_assets/images/logo_light.png" alt="">
+            </a>
+        </div>
+
+        <div class="d-md-none">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+                <i class="icon-tree5"></i>
+            </button>
+            <button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+                <i class="icon-paragraph-justify3"></i>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-mobile">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
+                        <i class="icon-paragraph-justify3"></i>
+                    </a>
+                </li>
+            </ul>
+
+
+
+            <ul class="navbar-nav ml-md-auto">
+
+                <li class="nav-item">
+                    <a href="/Home/Index" class="navbar-nav-link">
+                        <i class="icon-switch2"></i>
+                        <span class="d-md-none ml-2">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /main navbar -->
+    <!-- Page content -->
+    <div class="page-content">
+
+        <!-- Main sidebar -->
+        <div class="sidebar sidebar-light sidebar-main sidebar-expand-md">
+
+            <!-- Sidebar mobile toggler -->
+            <div class="sidebar-mobile-toggler text-center">
+                <a href="#" class="sidebar-mobile-main-toggle">
+                    <i class="icon-arrow-left8"></i>
+                </a>
+                Navigation
+                <a href="#" class="sidebar-mobile-expand">
+                    <i class="icon-screen-full"></i>
+                    <i class="icon-screen-normal"></i>
+                </a>
+            </div>
+            <!-- /sidebar mobile toggler -->
+            <!-- Sidebar content -->
+            <div class="sidebar-content">
+
+                <!-- User menu -->
+                <div class="sidebar-user-material">
+                    <div class="sidebar-user-material-body">
+                        <div class="card-body text-center">
+                            <a href="#">
+                                <img src="global_assets/images/placeholders/placeholder.jpg" class="img-fluid rounded-circle shadow-1 mb-3" width="80" height="80" alt="">
+                            </a>
+                            <h6 class="mb-0 text-white text-shadow-dark">Project Owner</h6>
+                            <span class="font-size-sm text-white text-shadow-dark">Vadodara</span>
+                        </div>
+
+                        <div class="sidebar-user-material-footer">
+                            <a href="#user-nav" class="d-flex justify-content-between align-items-center text-shadow-dark dropdown-toggle" data-toggle="collapse"><span>My account</span></a>
+                        </div>
+                    </div>
+
+                    <div class="collapse" id="user-nav">
+                        <ul class="nav nav-sidebar">
+
+
+                            <li class="nav-item">
+                                <a href="/Home/Index" class="nav-link">
+                                    <i class="icon-switch2"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /user menu -->
+                <!-- Main navigation -->
+                <div class="card card-sidebar-mobile">
+                    <ul class="nav nav-sidebar" data-nav-type="accordion">
+
+                        <!-- Main -->
+                        <li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
+                        <li class="nav-item">
+                            <a href="/Home/Projectowner" class="nav-link">
+                                <i class="icon-home4"></i>
+                                <span>
+                                    Dashboard
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs"></div> <i class="icon-menu" title="Forms"></i></li>
+                        <!--manage user-->
+                        <li class="nav-item nav-item-submenu">
+                            <a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Manage User</span></a>
+                            <ul class="nav nav-group-sub" data-submenu-title="Form components">
+                                <li class="nav-item"><a href="/Reg/user_data" class="nav-link">User Details</a></li>
+
+                            </ul>
+                        </li>
+                        <!--Manage Supplier-->
+                        <li class="nav-item nav-item-submenu">
+                            <a href="#" class="nav-link"><i class="icon-spell-check"></i> <span>Manage Supplier Onboard</span></a>
+                            <ul class="nav nav-group-sub" data-submenu-title="Text editors">
+                                <li class="nav-item"><a href="/SupplierOnboardProjOwner/SupplierDetails" class="nav-link">Onboard Details</a></li>
+                            </ul>
+                        </li>
+                        <!--manage document engine-->
+                        <li class="nav-item nav-item-submenu">
+                            <a href="#" class="nav-link"><i class="icon-upload"></i> <span>Manage Document Engine</span></a>
+                            <ul class="nav nav-group-sub" data-submenu-title="File uploaders">
+                                <li class="nav-item"><a href="/DocEng/DocEng" class="nav-link">Document Engine</a></li>
+
+                            </ul>
+                        </li>
+                        <!--mange queue-->
+                        <li class="nav-item nav-item-submenu">
+                            <a href="#" class="nav-link"><i class="icon-graph"></i> <span>Manage Queue</span></a>
+                            <ul class="nav nav-group-sub" data-submenu-title="Text editors">
+                                <li class="nav-item"><a href="/Queuemgt/Queuemgt" class="nav-link">Queue</a></li>
+
+                            </ul>
+                        </li>
+                        <!--rulebook-->
+                        <li class="nav-item nav-item-submenu">
+                            <a href="#" class="nav-link"><i class="icon-spell-check"></i> <span>Manage RuleBook</span></a>
+                            <ul class="nav nav-group-sub" data-submenu-title="Text editors">
+                                <li class="nav-item"><a href="/Rulebook/Rulebookproj" class="nav-link">Rule Books</a></li>
+
+                            </ul>
+                        </li>
+                        <!--reports-->
+                        <li class="nav-item nav-item-submenu">
+                            <a href="#" class="nav-link"><i class="icon-file-text2"></i> <span>Reports</span></a>
+                            <ul class="nav nav-group-sub" data-submenu-title="ECharts library">
+                               
+                                <li class="nav-item"><a href="/Views/Report/SupplierReportpro" class="nav-link">Reports</a></li>
+
+
+                            </ul>
+                        </li>
+                        <!--chatbook-->
+                        <li class="nav-item nav-item-submenu">
+                            <a href="#" class="nav-link"><i class="icon-bubbles4"></i> <span>Chat Book</span></a>
+                            <ul class="nav nav-group-sub" data-submenu-title="Text editors">
+                                <li class="nav-item"><a href="chat.html" class="nav-link">Chat comeing soon</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- /main navigation -->
+
+            </div>
+            <!-- /sidebar content -->
+
+        </div>
+        <!-- /main sidebar -->
+        <!-- Main content -->
+        <div class="content-wrapper">
+
+            <!-- Page header -->
+            <div class="page-header page-header-light">
+                <div class="page-header-content header-elements-md-inline">
+                    <div class="page-title d-flex">
+                        <h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Reports</span></h4>
+                        <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+                    </div>
+
+
+                </div>
+
+                <div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+                    <div class="d-flex">
+                        <div class="breadcrumb">
+                            <a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+                            <a href="datatable_extension_buttons_html5.html" class="breadcrumb-item">Report</a>
+                            <span class="breadcrumb-item active">Supplier Reports</span>
+                        </div>
+
+                        <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /page header -->
+            <!-- Content area -->
+            <div class="content">
+
+                <!-- Basic initialization -->
+                <div class="card">
+                    <div class="card-header header-elements-inline">
+                        <h5 class="card-title">Reports</h5>
+                        <div class="header-elements">
+                            <button class="btn btn-danger" ng-click="PdfReportsp()">pdf</button>
+                            <button class="btn btn-success " ng-click="ExcelReportsp()">Excel</button>
+                            <div class="list-icons">
+                                <a class="list-icons-item" data-action="collapse"></a>
+                                <a class="list-icons-item" data-action="reload"></a>
+                                <a class="list-icons-item" data-action="remove"></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <table class="table datatable-button-html5-basic">
+                        <thead>
+                            <tr>
+                                <th>Supplier Id</th>
+                                <th>Supplier Name</th>
+                                <th>Account Number</th>
+                                <th>Email</th>
+                                <th>Address</th>
+                                <th>Document Type</th>
+                                <th>Comments</th>
+                                <th>Rules</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="e in supplieronboard" ng-class-even="'even'" ng-class-odd="'odd'">
+                                <td>{{e.supplier_id}}</td>
+                                <td>{{e.supplier_name}}</td>
+                                <td>{{e.account_number}}</td>
+                                <td>{{e.email}}</td>
+                                <td>{{e.address}}</td>
+                                <td>{{e.document_types}}</td>
+                                <td>{{e.comments}}</td>
+                                <td>{{e.rules}}</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /basic initialization -->
+            </div>
+            <!-- /content area -->
+            <!-- Footer -->
+            <div class="navbar navbar-expand-lg navbar-light">
+                <div class="text-center d-lg-none w-100">
+                    <button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+                        <i class="icon-unfold mr-2"></i>
+                        Footer
+                    </button>
+                </div>
+
+                <div class="navbar-collapse collapse" id="navbar-footer">
+                    <span class="navbar-text">
+                        &copy; 2019 - 2020. <a href="#">Templatized Self-service Customer Platform</a> by <a href="http://" target="_blank">Hybrid Workforces</a>
+                    </span>
+
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item"><a href="https://kopyov.ticksy.com/" class="navbar-nav-link" target="_blank"><i class="icon-lifebuoy mr-2"></i> Support</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- /footer -->
+
+        </div>
+        <!-- /main content -->
+
+    </div>
+    <!-- /page content -->
+</body>
+</html>

@@ -1,0 +1,359 @@
+﻿@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Contact Details</title>
+    <!-- Global stylesheets -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="~/Scripts/css/global_assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Scripts/css/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Scripts/css/assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Scripts/css/assets/css/layout.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Scripts/css/assets/css/components.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Scripts/css/assets/css/colors.min.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+    <!--add more filed-->
+    <!--upload-->
+    <script src="~/Scripts/css/global_assets/js/plugins/uploaders/fileinput/plugins/purify.min.js"></script>
+    <script src="~/Scripts/css/global_assets/js/plugins/uploaders/fileinput/plugins/sortable.min.js"></script>
+    <script src="~/Scripts/css/global_assets/js/plugins/uploaders/fileinput/fileinput.min.js"></script>
+    <script src="~/Scripts/css/global_assets/js/demo_pages/uploader_bootstrap.js"></script>
+
+
+    <!-- Core JS files -->
+    <script src="~/Scripts/css/global_assets/js/main/jquery.min.js"></script>
+    <script src="~/Scripts/css/global_assets/js/main/bootstrap.bundle.min.js"></script>
+    <script src="~/Scripts/css/global_assets/js/plugins/loaders/blockui.min.js"></script>
+    <script src="~/Scripts/css/global_assets/js/plugins/ui/ripple.min.js"></script>
+    <!-- /core JS files -->
+    <!-- Theme JS files -->
+    <script src="~/Scripts/css/global_assets/js/plugins/forms/wizards/steps.min.js"></script>
+    <script src="~/Scripts/css/global_assets/js/plugins/forms/selects/select2.min.js"></script>
+    <script src="~/Scripts/css/global_assets/js/plugins/forms/styling/uniform.min.js"></script>
+    <script src="~/Scripts/css/global_assets/js/plugins/forms/inputs/inputmask.js"></script>
+    <script src="~/Scripts/css/global_assets/js/plugins/forms/validation/validate.min.js"></script>
+    <script src="~/Scripts/css/global_assets/js/plugins/extensions/cookie.js"></script>
+    <script src="~/Scripts/css/global_assets/js/plugins/extensions/jquery_ui/interactions.min.js"></script>
+    <script src="~/Scripts/css/assets/js/app.js"></script>
+
+
+    <!--controller-->
+    <script src="~/Script/angular.js"></script>
+    <script src="~/Script/angular.min.js"></script>
+    <script src="~/Script/angular-ui-router.min.js"></script>
+    <script src="~/Script/AngularControllers/contact.js"></script>
+
+    <script src="~/Scripts/css/global_assets/js/demo_pages/form_wizard.js"></script>
+    <script src="~/Scripts/css/global_assets/js/demo_pages/form_select2.js"></script>
+    <style>
+        .tableData {
+            border-left: solid 1px #D8C3C3;
+            border-top: solid 1px #D8C3C3;
+        }
+
+            .tableData tr {
+            }
+
+            .tableData td, .tableData th {
+                border-right: solid 1px #D8C3C3;
+                border-bottom: solid 1px #D8C3C3;
+                text-align: center;
+                padding: 5px;
+            }
+
+            .tableData td {
+            }
+
+            .tableData th {
+                background-color: cadetblue;
+                padding: 7px 5px;
+                border-bottom-color: #9C9C9C;
+            }
+
+        .odd {
+            background-color: #f3f3f3;
+        }
+
+        .even {
+            background-color: #ffffff;
+        }
+    </style>
+
+
+
+</head>
+<body>
+
+    <div class="navbar navbar-expand-md navbar-dark bg-indigo navbar-static">
+        <div class="navbar-brand">
+            <a href="index.html" class="d-inline-block">
+                <!--<img src="global_assets/images/logo_light.png" alt="">-->
+            </a>
+        </div>
+
+        <div class="d-md-none">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile">
+                <i class="icon-tree5"></i>
+            </button>
+            <button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
+                <i class="icon-paragraph-justify3"></i>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-mobile">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
+                        <i class="icon-paragraph-justify3"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <span class="navbar-text ml-md-3">
+                <span class="badge badge-mark border-orange-300 mr-2"></span>
+                Good Morning,Chetan
+            </span>
+
+            <ul class="navbar-nav ml-md-auto">
+                <li class="nav-item">
+                    <a href="#" class="navbar-nav-link">
+                        <i class="icon-switch2"></i>
+                        <span class="d-md-none ml-2">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /main navbar -->
+    <!-- Page content -->
+    <div class="page-content">
+
+        <!-- Main sidebar -->
+        <div class="sidebar sidebar-light sidebar-main sidebar-expand-md">
+
+            <!-- Sidebar mobile toggler -->
+            <div class="sidebar-mobile-toggler text-center">
+                <a href="#" class="sidebar-mobile-main-toggle">
+                    <i class="icon-arrow-left8"></i>
+                </a>
+                Navigation
+                <a href="#" class="sidebar-mobile-expand">
+                    <i class="icon-screen-full"></i>
+                    <i class="icon-screen-normal"></i>
+                </a>
+            </div>
+            <!-- /sidebar mobile toggler -->
+            <!-- Sidebar content -->
+            <div class="sidebar-content">
+
+                <!-- User menu -->
+                <div class="sidebar-user-material">
+                    <div class="sidebar-user-material-body">
+                        <div class="card-body text-center">
+                            <a href="#">
+                                <img src="~/Scripts/css/global_assets/images/placeholders/placeholder.jpg" class="img-fluid rounded-circle shadow-1 mb-3" width="80" height="80" alt="">
+                            </a>
+                            <h6 class="mb-0 text-white text-shadow-dark">clerk</h6>
+                            <span class="font-size-sm text-white text-shadow-dark">Vadodara</span>
+                        </div>
+
+                        <div class="sidebar-user-material-footer">
+                            <a href="#user-nav" class="d-flex justify-content-between align-items-center text-shadow-dark dropdown-toggle" data-toggle="collapse"><span>My account</span></a>
+                        </div>
+                    </div>
+
+                    <div class="collapse" id="user-nav">
+                        <ul class="nav nav-sidebar">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="icon-user-plus"></i>
+                                    <span>My profile</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="icon-switch2"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /user menu -->
+                <!-- Main navigation -->
+                <div class="card card-sidebar-mobile">
+                    <ul class="nav nav-sidebar" data-nav-type="accordion">
+
+                        <!-- Main -->
+                        <li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">
+                                <i class="icon-home4"></i>
+                                <span>
+                                    Dashboard
+                                </span>
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs"></div> <i class="icon-menu" title="Forms"></i></li>
+                        <!--supplier onboard-->
+                        <li class="nav-item nav-item-submenu">
+                            <a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Supplier Onboard</span></a>
+                            <ul class="nav nav-group-sub" data-submenu-title="Form components">
+                                <li class="nav-item"><a href="/SupplierOnboard/SupplierFrom" class="nav-link">Onboard From</a></li>
+                                <li class="nav-item"><a href="/SupplierOnboard/Supplierdata" class="nav-link">Onboard Details</a></li>
+                                <!--<li class="nav-item"><a href="/SupplierOnboard/Supplieredit" class="nav-link">Onboard Details Update</a></li>-->
+                            </ul>
+                        </li>
+                        <!--manage rulebook-->
+                        <li class="nav-item nav-item-submenu">
+                            <a href="#" class="nav-link"><i class="icon-spell-check"></i> <span>Manage RuleBook</span></a>
+                            <ul class="nav nav-group-sub" data-submenu-title="Text editors">
+                                <li class="nav-item"><a href="/Rulebook/Rulebook" class="nav-link">Rule Editor</a></li>
+
+                            </ul>
+                        </li>
+                        <!--View queue-->
+                        <li class="nav-item nav-item-submenu">
+                            <a href="#" class="nav-link"><i class="icon-graph"></i> <span>View Queue</span></a>
+                            <ul class="nav nav-group-sub" data-submenu-title="Text editors">
+                                <li class="nav-item"><a href="/Queuemgt/Queuemgt" class="nav-link">Queue</a></li>
+
+                            </ul>
+                        </li>
+                        <!--document engine-->
+                        <li class="nav-item nav-item-submenu">
+                            <a href="#" class="nav-link"><i class="icon-upload"></i> <span>Document Engine</span></a>
+                            <ul class="nav nav-group-sub" data-submenu-title="File uploaders">
+                                <li class="nav-item"><a href="/DocEng/DocEng" class="nav-link">Upload</a></li>
+                            </ul>
+                        </li>
+                        <!--report-->
+                        <li class="nav-item nav-item-submenu">
+                            <a href="#" class="nav-link"><i class="icon-file-text2"></i> <span>Report</span></a>
+                            <ul class="nav nav-group-sub" data-submenu-title="ECharts library">
+                                <li class="nav-item"><a href="/Report/SupplierReport" class="nav-link">Line charts</a></li>
+                            </ul>
+                        </li>
+                        <!--chat book-->
+                        <li class="nav-item nav-item-submenu">
+                            <a href="#" class="nav-link"><i class="icon-bubbles4"></i> <span>Chat Book</span></a>
+                            <ul class="nav nav-group-sub" data-submenu-title="Text editors">
+                                <li class="nav-item"><a href="chat.html" class="nav-link">Chat</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /main navigation -->
+            </div>
+            <!-- /sidebar content -->
+
+        </div>
+        <!-- /main sidebar -->
+        <!-- Main content -->
+        <div class="content-wrapper">
+
+            <!-- Page header -->
+            <div class="page-header page-header-light">
+                <div class="page-header-content header-elements-md-inline">
+                    <div class="page-title d-flex">
+                        <h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Supplier Onboard</span></h4>
+                        <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+                    </div>
+
+
+                </div>
+
+                <div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
+                    <div class="d-flex">
+                        <div class="breadcrumb">
+                            <a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+                            <a href="form_wizard.html" class="breadcrumb-item"></a>
+                            <span class="breadcrumb-item active">Contacts</span>
+                        </div>
+
+                        <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- /page header -->
+            <!-- Content area -->
+            <div class="content">
+
+                <!-- Wizard with validation -->
+                <div class="card">
+                    <div class="card-header bg-white header-elements-inline">
+                        <h6 class="card-title">All Contact Details</h6>
+                        <div class="header-elements">
+                            <div class="list-icons">
+                                <a class="list-icons-item" data-action="collapse"></a>
+                                <a class="list-icons-item" data-action="reload"></a>
+                                <a class="list-icons-item" data-action="remove"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-app="ContactApp" ng-controller="ContactCrt" >
+                        <table class="tableData">
+                            <tr>
+                                <th>Contact Id</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Comments</th>
+                               
+                            </tr>
+                            <tr ng-repeat="e in contact" ng-class-even="'even'" ng-class-odd="'odd'">
+                                <td>{{e.contact_id}}</td>
+                                <td>{{e.first_name}}</td>
+                                <td>{{e.last_name}}</td>
+                                <td>{{e.email}}</td>
+                                <td>{{e.phone}}</td>
+                                <td>{{e.comments}}</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+                <!-- /wizard with validation -->
+
+            </div>
+            <!-- /content area -->
+            <!-- Footer -->
+            <div class="navbar navbar-expand-lg navbar-light">
+                <div class="text-center d-lg-none w-100">
+                    <button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+                        <i class="icon-unfold mr-2"></i>
+                        Footer
+                    </button>
+                </div>
+
+                <div class="navbar-collapse collapse" id="navbar-footer">
+                    <span class="navbar-text">
+                        &copy; 2019 - 2020. <a href="#">Templatized Self-service Customer Platform</a> by <a href="http://" target="_blank">Hybrid Workforces</a>
+                    </span>
+
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item"><a href="https://kopyov.ticksy.com/" class="navbar-nav-link" target="_blank"><i class="icon-lifebuoy mr-2"></i> Support</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- /footer -->
+
+        </div>
+        <!-- /content wrapper -->
+
+    </div>
+    <!-- /page content -->
+
+
+</body>
+</html>
+

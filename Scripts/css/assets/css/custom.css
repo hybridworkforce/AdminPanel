@@ -1,0 +1,15 @@
+﻿.transform-default {
+    text-transform: initial;
+}
+
+.mt-n6, .my-n6 {
+    margin-top: -7.5rem !important;
+}
+
+.mt-n7, .my-n7 {
+    margin-top: -12rem !important;
+}
+
+#helpcenter-list .media {
+    margin-top: 0!important;
+}
